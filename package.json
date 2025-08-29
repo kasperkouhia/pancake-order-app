@@ -4,6 +4,7 @@
   "author": "Kasper Kouhia",
   "private": true,
   "type": "module",
+  "homepage": "https://kasperkouhia.github.io/pancake-order-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

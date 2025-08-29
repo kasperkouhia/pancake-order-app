@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router";
+import { HashRouter, Routes, Route, Navigate } from "react-router";
 
 import { FormProvider } from "./context/FormContext";
 import { OrdersProvider } from "./context/OrdersContext";
@@ -8,7 +8,7 @@ import ManageOrders from "./pages/ManageOrders";
 
 function App() {
   return (
-    <BrowserRouter basename="/pancake-order-app/">
+    <HashRouter>
       <Routes>
         <Route exact path="/" element={<Navigate to="/order" replace />} />
         <Route
@@ -29,7 +29,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
