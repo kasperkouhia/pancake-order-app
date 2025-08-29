@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: caramellatte --default;
+}
+
+@theme {
+  --font-noto-sans: "Noto Sans", sans-serif;
+}
+
+/* Fix for the gap that appears between an image and the top corners of the border of a card element */
+@utility card {
+  @apply overflow-hidden;
+
+  & figure {
+    @apply overflow-visible;
+  }
+}
+
+@layer base {
+  :root {
+    @apply font-noto-sans;
+    @apply font-light;
+  }
+}
