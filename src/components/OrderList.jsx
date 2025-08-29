@@ -22,7 +22,15 @@ function OrderList() {
     );
   }
 
-  return <ul className="mb-8 flex flex-col gap-4">{list}</ul>;
+  return (
+    <>
+      {list.length > 0 ? (
+        <ul className="mb-8 flex flex-col gap-4">{list}</ul>
+      ) : (
+        <p>No orders found</p>
+      )}
+    </>
+  );
 }
 
 export default OrderList;
